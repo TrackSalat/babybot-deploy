@@ -13,7 +13,7 @@ from telegram.ext import (
 # === Конфіг ===
 TOKEN = os.environ.get("BOT_TOKEN")
 if not TOKEN:
-    raise RuntimeError("Не знайдено BOT_TOKEN у змінних середовища.")
+    raise RuntimeError("BOT_TOKEN is not set")
 
 DATA_FILE = "data.json"  # тимчасове зберігання (на Render без диска — зникає після рестарту)
 
